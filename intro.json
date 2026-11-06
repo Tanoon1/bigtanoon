@@ -1,0 +1,62 @@
+{
+  "open": {
+    "duration": 9,
+    "camera": [
+      { "t": 0, "pos": [0, 2.2, 30], "look": [0, 4.5, -10], "fov": 45 },
+      { "t": 3.1, "pos": [0, 2.6, 25], "look": [0, 4.5, -10], "fov": 45 },
+      { "t": 3.2, "pos": [-15, 10, 17], "look": [0, 2.5, -3], "fov": 62, "ease": "cut" },
+      { "t": 6.4, "pos": [13, 6.5, 15], "look": [0, 3, -4], "fov": 55, "ease": "inOut" },
+      { "t": 9, "pos": [7, 2.4, 8], "look": [2, 1.6, 0], "fov": 48, "ease": "inOut" }
+    ],
+    "events": [
+      { "t": 0, "type": "fade", "to": 1, "dur": 0 },
+      { "t": 0.1, "type": "sound", "name": "heartbeat" },
+      { "t": 1.0, "type": "sound", "name": "heartbeat" },
+      { "t": 1.9, "type": "sound", "name": "heartbeat" },
+      { "t": 0.3, "type": "eyeOpen", "dur": 2.6 },
+      { "t": 1.2, "type": "music", "mood": "intro" },
+      { "t": 1.4, "type": "tts", "text": "ברוכים הבאים, לעונה חדשה של האח הגדול" },
+      { "t": 1.4, "type": "subtitle", "text": "ברוכים הבאים... לעונה חדשה של האח הגדול", "dur": 2.6 },
+      { "t": 3.2, "type": "fade", "to": 0, "dur": 0.25 },
+      { "t": 3.2, "type": "lights", "level": 1 },
+      { "t": 3.3, "type": "cheer", "dur": 4 },
+      { "t": 3.3, "type": "door", "open": true },
+      { "t": 6.4, "type": "hosts", "emote": "wave" },
+      { "t": 6.8, "type": "subtitle", "text": "והנה הם מגיעים... הדיירים של העונה!", "dur": 2.2 },
+      { "t": 6.8, "type": "tts", "text": "והנה הם מגיעים, הדיירים של העונה" }
+    ]
+  },
+  "entry": {
+    "walk": { "from": [10.5, 0, 1.6], "edge": [4.8, 0.35, 1.3], "center": [1.8, 0.35, 0.9], "stairBase": [0, 0.35, -4.2], "stairTop": [0, 3.6, -8.9], "door": [0, 3.6, -10.1], "speed": 3.9, "pause": 0.9 },
+    "shots": [
+      [ { "t": 0, "rel": "actor", "offset": [2.8, 1.5, 3.4], "look": [0, 1.3, 0], "fov": 40 }, { "t": 1, "rel": "actor", "offset": [1.5, 1.55, 2.6], "look": [0, 1.4, 0], "fov": 34 } ],
+      [ { "t": 0, "pos": [9, 1.3, 9.5], "look": "actor", "fov": 42 }, { "t": 1, "pos": [5.5, 1.7, 8.5], "look": "actor", "fov": 34 } ],
+      [ { "t": 0, "rel": "actor", "offset": [-2.8, 2.4, -2.4], "look": [0, 1.2, 0], "fov": 52 }, { "t": 1, "rel": "actor", "offset": [-2.4, 2.0, 2.6], "look": [0, 1.3, 0], "fov": 42 } ],
+      [ { "t": 0, "pos": [0, 7.5, 10], "look": "actor", "fov": 44 }, { "t": 1, "pos": [-4.5, 4, 7.5], "look": "actor", "fov": 38 } ],
+      [ { "t": 0, "rel": "actor", "offset": [0, 1.5, 3.6], "look": [0, 1.35, 0], "fov": 38 }, { "t": 1, "rel": "actor", "offset": [0.6, 1.45, 2.4], "look": [0, 1.45, 0], "fov": 32 } ]
+    ],
+    "events": [
+      { "t": 0.15, "type": "lowerThird" },
+      { "t": 0.1, "type": "tts", "text": "מספר {n}... {name}!" },
+      { "t": 0.2, "type": "cheer", "dur": 1.6 },
+      { "t": 0.6, "type": "hosts", "emote": "clap" }
+    ]
+  },
+  "outro": {
+    "duration": 6,
+    "camera": [
+      { "t": 0, "pos": [0, 5.2, 9], "look": [0, 4.2, -10], "fov": 48 },
+      { "t": 2.5, "pos": [0, 4.6, 0.5], "look": [0, 4.3, -10], "fov": 38, "ease": "inOut" }
+    ],
+    "events": [
+      { "t": 0.4, "type": "door", "open": false },
+      { "t": 0.4, "type": "sound", "name": "doorClose" },
+      { "t": 0.6, "type": "tts", "text": "הדלת נסגרה. המשחק מתחיל" },
+      { "t": 0.6, "type": "subtitle", "text": "הדלת נסגרה. המשחק... מתחיל.", "dur": 2 },
+      { "t": 2.6, "type": "fade", "to": 1, "dur": 0.05 },
+      { "t": 2.65, "type": "title", "dur": 2.8 },
+      { "t": 2.65, "type": "sound", "name": "sting" },
+      { "t": 5.5, "type": "titleOff" }
+    ]
+  }
+}
