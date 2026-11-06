@@ -1,0 +1,10 @@
+# Render.com Blueprint – free web service (WebSockets supported). New → Blueprint → pick this repo.
+services:
+  - type: web
+    name: big-brother-3d
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: BB_MIN_PLAYERS
+        value: "3"
